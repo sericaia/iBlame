@@ -1,9 +1,33 @@
 <ion-view title="Friends">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        {{friend.name}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+	<ion-content>
+
+		<!--		<div class="item item-input-inset">
+<label class="item-input-wrapper">
+<input type="text" ng-model="query" placeholder="search">
+</label>
+</div>-->
+
+		<div class="list list-inset">
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" placeholder="Search" ng-model="query" >
+			</label>
+		</div>	
+
+		<ion-list class="list list-inset">
+			<ion-item class="item" ng-repeat="friend in friends | filter:query" href="#/tab/friend/{{friend.id}}">
+
+				<div class="row">
+					<div class="col col-25">
+						<img src="{{friend.img}}">
+					</div>
+					<div class="col col-50">
+						{{friend.name}}
+					</div>
+					<div class="col col-25"><span class="badge badge-assertive">{{friend.blameNumber}}</span></div>
+				</div>
+			</ion-item >
+		</ion-list>
+
+	</ion-content>
 </ion-view>

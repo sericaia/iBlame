@@ -1,0 +1,26 @@
+<ion-view title="Blame">
+	<ion-content class="padding">
+
+		<div class="list">
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Who?</span>
+				<input type="text" placeholder="type person name" ng-model="username">
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">Why?</span>
+				<input type="text" placeholder="type reason" ng-model="reason">
+			</label>
+
+			<!-- TODO :: add anonymous mode -->
+			<div class="item item-checkbox">
+				<label class="checkbox">
+					<input type="checkbox" ng-model="anonymous">
+				</label>
+				Anonymous
+			</div>
+
+		</div>
+
+		<button type="button" class="button button-block button-positive" ng-click="blamePerson()">Blame!</button>
+	</ion-content>
+</ion-view>

@@ -1,5 +1,25 @@
 <ion-view title="Dashboard">
-  <ion-content class="padding">
-    <h1>Dash</h1>
-  </ion-content>
+	<ion-content class="padding">
+		<h1>iBlame</h1>
+		<h5>Hello {{user.name}}, do you want to blame someone?</h5>
+		
+		<p>Current blames: <span class="badge badge-assertive">{{user.blameNumber}}</span></p>
+		
+		
+		<!-- TODO :: show my personal cards -->
+
+		<ion-list>
+			<div ng-repeat="blame in friendBlames">
+				<div class="card">
+					<div class="item item-text-wrap">
+						{{blame.reason}}
+						<br/>
+						Blamed by: {{blame.blamersList.length}}						
+					</div>
+				</div>
+			</div>
+		</ion-list>
+
+		
+	</ion-content>
 </ion-view>
