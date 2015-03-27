@@ -8,18 +8,18 @@ angular.module('starter.services', [])
 
 	// Some fake testing data
 	var friends = [
-		{ id: 0, username: 'dege', name: 'Diogo Gil', blameNumber: 60, img: '../img/dege.jpg'},
-		{ id: 1, username: 'raposo', name: 'Francisco Raposo' , blameNumber: 1, img: '../img/raposo.jpg'},
-		{ id: 2, username: 'campelo', name: 'Francisco Campelo' , blameNumber: 1, img: '../img/defaultuser.jpg'},
-		{ id: 3, username: 'gads', name: 'Guilherme Santos' , blameNumber: 1, img: '../img/gads.jpg'},
-		{ id: 4, username: 'joao', name: 'João Santos' , blameNumber: 1, img: '../img/defaultuser.jpg'},
-		{ id: 5, username: 'sericaia', name: 'Daniela Borges' , blameNumber: 1, img: '../img/defaultuser.jpg'}
+		{ id: 0, username: 'dege', name: 'Diogo', blameNumber: 60, img: '../img/dege.jpg'},
+		{ id: 1, username: 'raposo', name: 'Francisco' , blameNumber: 1, img: '../img/raposo.jpg'},
+		{ id: 2, username: 'campelo', name: 'Francisco' , blameNumber: 1, img: '../img/defaultuser.jpg'},
+		{ id: 3, username: 'gads', name: 'Guilherme' , blameNumber: 1, img: '../img/gads.jpg'},
+		{ id: 4, username: 'joao', name: 'João' , blameNumber: 1, img: '../img/defaultuser.jpg'},
+		{ id: 5, username: 'sericaia', name: 'Daniela' , blameNumber: 1, img: '../img/defaultuser.jpg'}
 	];
 
 	var blames = [
 		{ id: 0, blamedUserId: 1, blameOwnerId: 5, createdAt: new Date(), reason: "brought lunch in a inapropriate day", blamersList: [2, 3, 4]},
 		{ id: 1, blamedUserId: 1, blameOwnerId: 5, createdAt: new Date(), reason: "does not camel case letters in code", blamersList: [2]},
-		{ id: 2, blamedUserId: 0, blameOwnerId: 3, createdAt: new Date(), reason: "presented old content to zpx chat", blamersList: [0, 5]},
+		{ id: 2, blamedUserId: 0, blameOwnerId: 3, createdAt: new Date(), reason: "presented old content to chat", blamersList: [0, 5]},
 		{ id: 3, blamedUserId: 5, blameOwnerId: 4, createdAt: new Date(), reason: "xpto", blamersList: [0, 3, 1]}
 	];
 
